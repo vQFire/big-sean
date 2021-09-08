@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Tijs Groenendaal -->
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" styleClass="AP_green" stylesheets="@../styles/master.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.MainMenuController">
+    <VBox alignment="CENTER" layoutX="550.0" layoutY="357.0" prefHeight="500.0" prefWidth="500.0" spacing="50.0">
+        <TextField fx:id="playerName" layoutX="160.0" layoutY="345.0" maxWidth="200.0" prefHeight="30.0" prefWidth="200.0" promptText="Player name">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <Button mnemonicParsing="false" onAction="#HostGame" prefHeight="100.0" prefWidth="300.0" styleClass="HG_btn" text="Host Game" textFill="WHITE">
+            <font>
+                <Font name="Georgia" size="40.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#JoinGame" prefHeight="100.0" prefWidth="300.0" styleClass="JG_btn" text="Join Game" textFill="WHITE">
+            <font>
+                <Font name="Georgia" size="40.0" />
+            </font>
+        </Button>
+        <TextField fx:id="InviteLink" maxWidth="200.0" prefHeight="30.0" prefWidth="200.0" promptText="Invite Link">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+    </VBox>
+    <ImageView fitHeight="350.0" fitWidth="700.0" layoutX="450.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" styleClass="open_settings">
+        <Image url="@../images/logo.png" />
+    </ImageView>
+    <VBox layoutX="25.0" layoutY="25.0" prefHeight="145.0" prefWidth="61.0">
+        <Button mnemonicParsing="false" onAction="#openSettings" styleClass="transparent_button">
+            <graphic>
+                <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/other/icon_settings.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#openInfo" styleClass="transparent_button">
+            <graphic>
+                <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/other/icon_info.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </VBox>
+</AnchorPane>

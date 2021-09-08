@@ -1,0 +1,53 @@
+.AP_green {
+  -fx-background-color: #73f595;
+}
+
+.buildingLocation {
+    -fx-view-order: -1;
+}
+
+.portLocation {
+    -fx-view-order: -1;
+}
+
+.AP_blue {
+  -fx-background-color: #42d1f5;
+}
+
+.AP_darkBlue {
+	-fx-background-color: #18b2d9;
+}
+
+.HG_btn {
+  -fx-background-image: url("../images/HG_btn_bg.jpg");
+  -fx-background-size: 400px;
+}
+
+.JG_btn {
+  -fx-background-image: url("../images/JG_btn_bg.jpg");
+  -fx-background-size: 200px;
+}
+
+.Setting_Hbox {
+  -fx-background-color: #18b2d9;
+}
+
+.inventory_bg {
+    -fx-background-color: #eaebcc;
+    -fx-background-radius: 8;
+}
+
+.player_inventory {
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-width: 2;
+    -fx-border-color: black;
+}
+
+.transparent_button {
+    -fx-background-color: transparent;
+}
+
+.text-area {
+    -fx-background-color: transparent;
+}
+

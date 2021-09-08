@@ -1,0 +1,16 @@
+.game-options {
+    -fx-pref-width: 60px;
+    -fx-pref-height: 60px;
+    -fx-border-insets: 0 0 0 20px;
+}
+
+.player-box Button {
+    -fx-pref-width: 120px;
+    -fx-pref-height: 120px;
+}
+
+.start-game {
+    -fx-pref-width: 280px;
+    -fx-pref-height: 120px;
+}
+

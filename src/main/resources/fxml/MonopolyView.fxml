@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!-- Tijs Groenendaal -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.MonopolyController">
+   <children>
+      <Label fx:id="card" layoutX="7.0" layoutY="104.0" prefHeight="83.0" prefWidth="158.0" text="Choose your card">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="104.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button fx:id="lumber" mnemonicParsing="false" onAction="#chooseCard" prefHeight="50.0">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cards/card_lumber.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="brick" mnemonicParsing="false" onAction="#chooseCard">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cards/card_brick.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="wool" mnemonicParsing="false" onAction="#chooseCard">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cards/card_wool.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="grain" mnemonicParsing="false" onAction="#chooseCard">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cards/card_grain.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ore" mnemonicParsing="false" onAction="#chooseCard">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cards/card_ore.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="useButton" layoutX="165.0" layoutY="104.0" mnemonicParsing="false" onAction="#useMonopolyCard" prefHeight="83.0" prefWidth="22.0">
+         <graphic>
+            <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/other/card_monopoly.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

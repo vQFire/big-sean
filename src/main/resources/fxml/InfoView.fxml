@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Lucas Philippi-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" styleClass="AP_darkBlue" stylesheets="@../styles/master.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.InfoController">
+   <children>
+      <Button layoutX="20.0" layoutY="33.0" mnemonicParsing="false" onAction="#returnTo" prefHeight="103.0" prefWidth="92.0" styleClass="transparent_button">
+         <graphic>
+            <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/other/icon_arrow.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ScrollPane layoutX="756.0" prefHeight="900.0" prefWidth="844.0">
+         <content>
+            <VBox prefHeight="1125.0" prefWidth="711.0">
+               <children>
+                  <TextField text="Produce Resources">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextArea editable="false" minHeight="-Infinity" prefHeight="129.0" prefWidth="836.0" text="Build settlements &amp; cities to produce resources. Resources are produced &#10;when any player rolls the dice. Whomever has a settlement or a city in the border of &#10;the dice number will receive the resource shown in the tile.&#10;Settlements produce 1 resource, and cities produce 2 resources.">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <TextField text="Rolling 7 &amp; the Robber">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <FlowPane prefHeight="99.0" prefWidth="841.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="87.0" prefWidth="672.0" text="\\When a player rolls a 7, they get to place the robber on any tile they wish and &#10;steal 1 random card from any opponent with a settlement or city on that tile.&#10;The robber prevents any resource production from the tile it is on." wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tiles/numbers/icon_robber.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+                  <TextField text="Use Resources">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <FlowPane prefHeight="519.0" prefWidth="841.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="151.0" prefWidth="829.0" text="Resources can be used to:&#10;&#10;Build a Road: Lumber &amp; Brick                    Build a Settlement: Lumber, Brick, Wool, Grain&#10;Build a City: Grainx2, Orex3                        Buy a Development Card: Wool, Grain, Ore&#10;Trade with other players" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/player/road_red.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/player/settlement_red.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/player/city_red.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other/card_devcardback.png" />
+                           </image>
+                           <FlowPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </FlowPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other/icon_trade.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+                  <TextField text="Trade">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <FlowPane prefHeight="182.0" prefWidth="812.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="182.0" prefWidth="660.0" text="Bank: By default, you can give 4 of the same type of card to obtain 1 of any other type.&#10;Bank with Ports: If you have a settlement or a city on a port you automatically use that ports' specialty. If you have 3:1 it means that you can trade 3 of the same type of card to obtain 1 of any other type. If you have 2:1, then you can trade 2 of the corresponding type to obtain 1 of any other card." wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="173.0" fitWidth="167.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other/icon_bank.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+                  <TextField text="Use Longest Road">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <FlowPane prefHeight="99.0" prefWidth="841.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="182.0" prefWidth="660.0" text="The player with the longest consecutive road earns 2 victory points. A minimum of 5 consecutive roads need to be placed in order to get this bonus." wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="204.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other/stat_longest_road.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+                  <TextField text="Largest Army">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <FlowPane prefHeight="99.0" prefWidth="841.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="182.0" prefWidth="658.0" text="The player to use the most amount of Knight cards earns 2 victory points. A minimum of 3 Knight cards needs to be used in order to get this bonus." wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="204.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other/stat_largest_army.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+                  <TextField text="Points">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <FlowPane prefHeight="99.0" prefWidth="841.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="182.0" prefWidth="658.0" text="- Settlement: 1 point&#10;- City: 2 points&#10;- Longest Road: 2 points&#10;- Largest Army: 2 points&#10;- +1 Victory Points Development Cards: 1 point&#10;&#10;You win the game at 10 Points." wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="204.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other/card_vp.png" />
+                           </image>
+                           <FlowPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </FlowPane.margin>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+                  <TextField text="Knight card">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <FlowPane prefHeight="99.0" prefWidth="841.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="182.0" prefWidth="658.0" text="Using a knight card allows you to move the robber and steal a card from your opponent. It also counts as one cards towards the largest army achievement." wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="204.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other/card_knight.png" />
+                           </image>
+                           <FlowPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </FlowPane.margin>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+                  <TextField prefHeight="39.0" prefWidth="827.0" text="Monopoly card">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <FlowPane prefHeight="99.0" prefWidth="841.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="182.0" prefWidth="658.0" text="Using a monopoly card allows you to choose one resource. After choosing a resources every opponent has to give you all of that resource." wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="204.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other/card_monopoly.png" />
+                           </image>
+                           <FlowPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </FlowPane.margin>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+                  <TextField prefHeight="39.0" prefWidth="827.0" text="Road building card">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <FlowPane prefHeight="99.0" prefWidth="841.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="182.0" prefWidth="658.0" text="Using a road building card allows you to place two free roads near your settlements and other roads." wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="204.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other/card_roadbuilding.png" />
+                           </image>
+                           <FlowPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </FlowPane.margin>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+                  <TextField prefHeight="39.0" prefWidth="827.0" text="Year of plenty card">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <FlowPane prefHeight="99.0" prefWidth="841.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="182.0" prefWidth="658.0" text="Using a Year of plenty card allows you to choose two resources from the bank. " wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="204.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other/card_yearofplenty.png" />
+                           </image>
+                           <FlowPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </FlowPane.margin>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+                  <TextField prefHeight="39.0" prefWidth="827.0" text="Victory point card">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <FlowPane prefHeight="99.0" prefWidth="841.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="182.0" prefWidth="658.0" text="Using a Victory point card gives you a hidden Victory point thats only visible to you." wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="204.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/other/card_vp.png" />
+                           </image>
+                           <FlowPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </FlowPane.margin>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="364.0" fitWidth="633.0" layoutX="111.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/infoMenu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="357.0" fitWidth="659.0" layoutX="111.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/infoHostGame.png" />
+         </image>
+      </ImageView>
+      <TextArea layoutX="111.0" layoutY="364.0" prefHeight="37.0" prefWidth="633.0" text="Host or join a game with the right code, change your personal settings and lookup the game rules." />
+      <TextArea layoutX="112.0" layoutY="758.0" prefHeight="37.0" prefWidth="633.0" text="Send messages to opponents, change game settings and start the game." />
+   </children>
+</AnchorPane>

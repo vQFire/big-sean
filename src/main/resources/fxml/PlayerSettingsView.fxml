@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Tijs Groenendaal, Sean Vis -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" styleClass="AP_blue" stylesheets="@../styles/master.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.PlayerSettingsController">
+    <HBox alignment="CENTER" layoutX="600.0" layoutY="637.0" prefHeight="59.0" prefWidth="400.0" spacing="100.0">
+        <Button mnemonicParsing="false" onAction="#saveSettings" prefHeight="50.0" prefWidth="150.0" text="Save">
+            <font>
+                <Font name="Georgia" size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#goBack" prefHeight="50.0" prefWidth="150.0" text="Back">
+            <font>
+                <Font name="Georgia" size="20.0" />
+            </font>
+        </Button>
+    </HBox>
+    <Pane layoutX="460.0" layoutY="202.0" prefHeight="427.0" prefWidth="681.0" styleClass="AP_darkBlue">
+        <VBox prefHeight="427.0" prefWidth="681.0">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="453.0" spacing="10.0">
+                <Label text="Volume">
+                    <font>
+                        <Font name="Georgia" size="20.0" />
+                    </font>
+                </Label>
+                <Slider fx:id="volumeSlider" majorTickUnit="0.1" max="1" minorTickCount="0" prefHeight="38.0" prefWidth="189.0" showTickLabels="true" showTickMarks="true" value="0.5" />
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                <Label text="Mute">
+                    <font>
+                        <Font name="Georgia" size="20.0" />
+                    </font>
+                </Label>
+                <CheckBox fx:id="soundMute" mnemonicParsing="false" />
+            </HBox>
+        </VBox>
+    </Pane>
+   <VBox layoutX="25.0" layoutY="25.0" prefHeight="38.0" prefWidth="91.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#goBack" prefHeight="50.0" prefWidth="50.0" styleClass="transparent_button">
+            <graphic>
+                <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/other/icon_arrow.png" />
+                </ImageView>
+            </graphic>
+         </Button>
+      </children>
+   </VBox>
+</AnchorPane>
